@@ -15,7 +15,7 @@ const routes: Routes = [
   component: FormComponent
 },
 {
-  path:"home",
+  path:"",
   component: HomeComponent
 },
 {

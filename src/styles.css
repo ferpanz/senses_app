@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background-color: rgb(195, 245, 110);
+  overflow-x: hidden;
+}
+
+#logo-index img {
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+  border-radius: 50%; /* Hace que la imagen tenga bordes redondeados/circulares */
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+  max-height: 300px; /* Puedes ajustar la altura máxima si es necesario */
+}
+
+.full-height-container {
+  min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido entre la parte superior e inferior */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.btn-container {
+  margin-bottom: 20px; /* Espaciado inferior para el botón */
+}
+
+.mobile-view {
+  max-width: 375px; /* Ancho típico de un celular */
+  margin: 0 auto; /* Centra el contenido */
+  border: 1px solid #ccc; /* Opcional: borde para simular el celular */
+  border-radius: 10px; /* Opcional: bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}

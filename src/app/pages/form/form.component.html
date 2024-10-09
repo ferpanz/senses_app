@@ -1,1 +1,29 @@
-<p>form works!</p>
+<div class="container my-5 bg-light">
+  <div class="mobile-view p-3">
+    <h5 class="text-center mb-4">Algunos datos para hacer tu reserva</h5>
+    <!-- Aquí puedes agregar más contenido -->
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre y apellido</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">N° de teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" required>
+      </div>
+      <div class="row g-3 mb-3">
+        <div class="col-6">
+          <label for="fecha" class="form-label">Elegir fecha</label>
+          <input type="date" class="form-control" id="fecha" required>
+        </div>
+        <div class="col-6">
+          <label for="horario" class="form-label">Elegir horario</label>
+          <input type="time" class="form-control" id="horario" required>
+        </div>
+      </div>
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Reservar</button>
+      </div>
+    </form>
+  </div>
+</div>
