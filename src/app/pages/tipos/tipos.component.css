@@ -1,0 +1,22 @@
+.btn-square {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.full-height-container {
+  min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido entre la parte superior e inferior */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.btn-container {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+

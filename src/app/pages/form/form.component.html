@@ -1,3 +1,4 @@
+
 <div class="container my-5 bg-light">
   <div class="mobile-view p-3">
     <h5 class="text-center mb-4">Algunos datos para hacer tu reserva</h5>
@@ -18,12 +19,38 @@
         </div>
         <div class="col-6">
           <label for="horario" class="form-label">Elegir horario</label>
-          <input type="time" class="form-control" id="horario" required>
+          <select class="form-select" aria-label="Default select example">
+            <option selected disabled>Horarios</option>
+            <option value="1">8:00hs</option>
+            <option value="2">9:00hs</option>
+            <option value="3">10:00hs</option>
+            <option value="4">11:00hs</option>
+            <option value="5">15:00hs</option>
+            <option value="6">16:00hs</option>
+            <option value="7">17:00hs</option>
+            <option value="8">18:00hs</option>
+            <option value="9">19:00hs</option>
+            <option value="10">20:00hs</option>
+          </select>
         </div>
+        <div>
+        <label for="horario" class="form-label">Elegir tipo de masaje</label>
+        <select class="form-select" aria-label="Default select example">
+          <option selected disabled>Tipos de masaje</option>
+          <option value="1">Masaje deportivo</option>
+          <option value="2">Masaje descontracturante</option>
+          <option value="3">Masaje relajante</option>
+          <option value="4">kiropraxia</option>
+        </select>
+      </div>
       </div>
       <div class="d-grid">
         <button type="submit" class="btn btn-primary">Reservar</button>
       </div>
     </form>
   </div>
+</div>
+
+<div class="container">
+  <button type="button" class="btn btn-secondary btn-lg" (click)="navegar('tipos')">Volver</button>
 </div>

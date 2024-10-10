@@ -1,1 +1,21 @@
 
+#logo-index img {
+  max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+  height: auto;
+  border-radius: 50%; /* Hace que la imagen tenga bordes redondeados/circulares */
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+  max-height: 300px; /* Puedes ajustar la altura máxima si es necesario */
+}
+
+.full-height-container {
+  min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido entre la parte superior e inferior */
+  align-items: center; /* Centra el contenido horizontalmente */
+}
+
+.btn-container {
+  margin-top: 100px;
+  margin-bottom: 20px; /* Espaciado inferior para el botón */
+}

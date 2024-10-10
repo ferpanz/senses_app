@@ -1,1 +1,81 @@
-<p>tipos works!</p>
+
+<div class="container my-5">
+  <div class="row justify-content-center">
+      <div class="col-6 d-flex justify-content-center">
+          <!-- Botón para Masajes relajantes -->
+          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRelajantes" aria-controls="offcanvasRelajantes">
+              Masajes relajantes
+          </button>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+          <!-- Botón para Masajes descontracturantes -->
+          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDescontracturantes" aria-controls="offcanvasDescontracturantes">
+              Masajes descontracturantes
+          </button>
+      </div>
+  </div>
+  <div class="row justify-content-center">
+      <div class="col-6 d-flex justify-content-center">
+          <!-- Botón para Masajes deportivos -->
+          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeportivos" aria-controls="offcanvasDeportivos">
+              Masajes deportivos
+          </button>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+          <!-- Botón para Kiropraxia -->
+          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKiropraxia" aria-controls="offcanvasKiropraxia">
+              Kiropraxia
+          </button>
+      </div>
+  </div>
+</div>
+
+<!-- Offcanvas Masajes relajantes -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRelajantes" aria-labelledby="offcanvasRelajantesLabel">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRelajantesLabel">Masajes relajantes</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      Contenido sobre masajes relajantes.
+  </div>
+</div>
+
+<!-- Offcanvas Masajes descontracturantes -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDescontracturantes" aria-labelledby="offcanvasDescontracturantesLabel">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasDescontracturantesLabel">Masajes descontracturantes</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      Contenido sobre masajes descontracturantes.
+  </div>
+</div>
+
+<!-- Offcanvas Masajes deportivos -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDeportivos" aria-labelledby="offcanvasDeportivosLabel">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasDeportivosLabel">Masajes deportivos</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      Contenido sobre masajes deportivos.
+  </div>
+</div>
+
+<!-- Offcanvas Kiropraxia -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasKiropraxia" aria-labelledby="offcanvasKiropraxiaLabel">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasKiropraxiaLabel">Kiropraxia</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      Contenido sobre kiropraxia.
+  </div>
+</div>
+
+<div class="container full-height-container">
+  <div class="btn-container">
+    <button type="button" class="btn btn-primary btn-lg" (click)="navegar('form')">Hacé tu reserva</button>
+  </div>
+</div>
