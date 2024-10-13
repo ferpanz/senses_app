@@ -1,5 +1,6 @@
 
 #logo-index img {
+  margin-top: 35%;
   max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
   height: auto;
   border-radius: 50%; /* Hace que la imagen tenga bordes redondeados/circulares */
