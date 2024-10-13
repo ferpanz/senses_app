@@ -1,78 +1,67 @@
-
-<div class="container my-5">
-  <div class="row justify-content-center">
-      <div class="col-6 d-flex justify-content-center">
-          <!-- Botón para Masajes relajantes -->
-          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRelajantes" aria-controls="offcanvasRelajantes">
-              Masajes relajantes
-          </button>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Masajes relajantes
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Los masajes relajantes </strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
-      <div class="col-6 d-flex justify-content-center">
-          <!-- Botón para Masajes descontracturantes -->
-          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDescontracturantes" aria-controls="offcanvasDescontracturantes">
-              Masajes descontracturantes
-          </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Masajes descontracturantes
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Los masajes descontracturantes </strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
+    </div>
   </div>
-  <div class="row justify-content-center">
-      <div class="col-6 d-flex justify-content-center">
-          <!-- Botón para Masajes deportivos -->
-          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDeportivos" aria-controls="offcanvasDeportivos">
-              Masajes deportivos
-          </button>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Masajes deportivos
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Los masajes deportivos </strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
-      <div class="col-6 d-flex justify-content-center">
-          <!-- Botón para Kiropraxia -->
-          <button class="btn btn-light btn-square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKiropraxia" aria-controls="offcanvasKiropraxia">
-              Kiropraxia
-          </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Kiropraxia
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>La kiropraxia </strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
       </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Depilación definitiva
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>La depilación definitiva </strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- Offcanvas Masajes relajantes -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRelajantes" aria-labelledby="offcanvasRelajantesLabel">
-  <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasRelajantesLabel">Masajes relajantes</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      Contenido sobre masajes relajantes.
-  </div>
-</div>
 
-<!-- Offcanvas Masajes descontracturantes -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDescontracturantes" aria-labelledby="offcanvasDescontracturantesLabel">
-  <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasDescontracturantesLabel">Masajes descontracturantes</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      Contenido sobre masajes descontracturantes.
-  </div>
-</div>
-
-<!-- Offcanvas Masajes deportivos -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDeportivos" aria-labelledby="offcanvasDeportivosLabel">
-  <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasDeportivosLabel">Masajes deportivos</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      Contenido sobre masajes deportivos.
-  </div>
-</div>
-
-<!-- Offcanvas Kiropraxia -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasKiropraxia" aria-labelledby="offcanvasKiropraxiaLabel">
-  <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasKiropraxiaLabel">Kiropraxia</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-      Contenido sobre kiropraxia.
-  </div>
-</div>
 
 <div class="container full-height-container">
   <div class="btn-container">
