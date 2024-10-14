@@ -1,46 +1,43 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-title text-center">Algunos datos para hacer tu reserva</h5>
-    <form>
+    <form (ngSubmit)="onSubmit()">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre y apellido</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" [(ngModel)]="nombre" name="nombre" required>
       </div>
-      <div class="mb-3">
-        <label for="telefono" class="form-label">N° de teléfono</label>
-        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono" required>
-      </div>
+
       <div class="row g-3 mb-3">
         <div class="col-6">
           <label for="fecha" class="form-label">Elegir fecha</label>
-          <input type="date" class="form-control" id="fecha" required>
+          <input type="date" class="form-control" id="fecha" [(ngModel)]="fecha" name="fecha" required>
         </div>
         <div class="col-6">
           <label for="horario" class="form-label">Elegir horario</label>
-          <select class="form-select" aria-label="Default select example">
+          <select class="form-select" [(ngModel)]="horario" name="horario" required>
             <option selected disabled>Horarios</option>
-            <option value="1">8:00hs</option>
-            <option value="2">9:00hs</option>
-            <option value="3">10:00hs</option>
-            <option value="4">11:00hs</option>
-            <option value="5">15:00hs</option>
-            <option value="6">16:00hs</option>
-            <option value="7">17:00hs</option>
-            <option value="8">18:00hs</option>
-            <option value="9">19:00hs</option>
-            <option value="10">20:00hs</option>
+            <option value="8:00hs">8:00hs</option>
+            <option value="9:00hs">9:00hs</option>
+            <option value="10:00hs">10:00hs</option>
+            <option value="11:00hs">11:00hs</option>
+            <option value="15:00hs">15:00hs</option>
+            <option value="16:00hs">16:00hs</option>
+            <option value="17:00hs">17:00hs</option>
+            <option value="18:00hs">18:00hs</option>
+            <option value="19:00hs">19:00hs</option>
+            <option value="20:00hs">20:00hs</option>
           </select>
         </div>
-        <div>
-        <label for="horario" class="form-label">Elegir tipo de masaje</label>
-        <select class="form-select" aria-label="Default select example">
-          <option selected disabled>Tipos de masaje</option>
-          <option value="1">Masaje deportivo</option>
-          <option value="2">Masaje descontracturante</option>
-          <option value="3">Masaje relajante</option>
-          <option value="4">kiropraxia</option>
-        </select>
       </div>
+      <div class="mb-3">
+        <label for="tipoMasaje" class="form-label">Elegir tipo de masaje</label>
+        <select class="form-select" [(ngModel)]="tipoMasaje" name="tipoMasaje" required>
+          <option selected disabled>Tipos de masaje</option>
+          <option value="Masaje deportivo">Masaje deportivo</option>
+          <option value="Masaje descontracturante">Masaje descontracturante</option>
+          <option value="Masaje relajante">Masaje relajante</option>
+          <option value="kiropraxia">Kiropraxia</option>
+        </select>
       </div>
       <div class="d-grid">
         <button type="submit" class="btn btn-primary">Reservar</button>
@@ -49,12 +46,7 @@
   </div>
 </div>
 
-
-
-
-
-
-
 <div class="container">
   <button type="button" class="btn btn-secondary btn-lg" (click)="navegar('tipos')">Volver</button>
 </div>
+

@@ -7,6 +7,26 @@ import { Router } from '@angular/router';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+
+  nombre: string = '';
+  fecha: string = '';
+  horario: string = '';
+  tipoMasaje: string = '';
+
+  onSubmit() {
+    const numeroWhatsapp = '5493571530727';
+    const mensaje = `Reserva de masaje:
+    Nombre: ${this.nombre}
+    Fecha: ${this.fecha}
+    Horario: ${this.horario}
+    Tipo de masaje: ${this.tipoMasaje}`;
+
+    const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  }
+
+
+
   constructor(private router: Router){
 
   }
