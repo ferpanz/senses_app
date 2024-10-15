@@ -1,27 +1,11 @@
 # SensesApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+SensesApp está realizada con [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7 y con Bootstraps 5.3.
 
-## Development server
+# Finalidad
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+El objetivo de esta aplicación es brindar un servicio de solicitud de turno por medio de la apliación Whatsapp.
+Esta app está pensada para abrirse en dispositivos móviles por lo que su diseño no está preparado para pantallas grandes.
+Esta desición se basa en que Senses Masajes utiliza como medio de publicidad y publicación la red social Instagram (utilizada casi exclusivamente en móviles) y que el link de acceso será colgado en la bio.
+El problema que intenta solucionar es el de aquellos potenciales clientes que llegan a la cuenta de Instagran de @senses_masajesrio3 pero que por distintan razones no realiza consultas por el servicio de mensajería de la red social o de los medios de comunicación ofrecidos.
+Sensesapp forma parte de un plan general de marketing para Senses Masajes Río 3.
