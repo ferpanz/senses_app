@@ -1,17 +1,9 @@
 .accordion {
-  margin: 10% 2% 10% 2%;
-}
-
-.full-height-container {
-  min-height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribuye el contenido entre la parte superior e inferior */
-  align-items: center; /* Centra el contenido horizontalmente */
+  margin: 20% 2% 10% 2%;
 }
 
 .btn-container {
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 20px;
 }
 
