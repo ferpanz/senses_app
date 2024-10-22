@@ -4,7 +4,7 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-title text-center">Algunos datos para hacer tu reserva</h5>
-    <form (ngSubmit)="onSubmit()">
+    <form #reservaForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre y apellido</label>
         <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" [(ngModel)]="nombre" name="nombre" required>
@@ -13,7 +13,7 @@
       <div class="row g-3 mb-3">
         <div class="col-6">
           <label for="fecha" class="form-label">Elegir fecha</label>
-          <input type="date" class="form-control" id="fecha" [(ngModel)]="fecha" name="fecha" required>
+          <input type="date" class="form-control" id="fecha" [(ngModel)]="fecha" name="fecha"  required>
         </div>
         <div class="col-6">
           <label for="horario" class="form-label">Elegir horario</label>
@@ -36,10 +36,10 @@
         <label for="tipoMasaje" class="form-label">Elegir tipo de masaje</label>
         <select class="form-select" [(ngModel)]="tipoMasaje" name="tipoMasaje" required>
           <option selected disabled>Tipos de masaje</option>
-          <option value="Masaje deportivo">Masaje deportivo</option>
-          <option value="Masaje descontracturante">Masaje descontracturante</option>
           <option value="Masaje relajante">Masaje relajante</option>
-          <option value="kiropraxia">Kiropraxia</option>
+          <option value="Masaje descontracturante">Masaje descontracturante</option>
+          <option value="Masaje deportivo">Masaje deportivo</option>
+          <option value="Ajuste">Ajuste</option>
         </select>
       </div>
       <div class="d-grid">
