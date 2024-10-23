@@ -13,7 +13,7 @@
       <div class="row g-3 mb-3">
         <div class="col-6">
           <label for="fecha" class="form-label">Elegir fecha</label>
-          <input type="date" class="form-control" id="fecha" [(ngModel)]="fecha" name="fecha" required>
+          <input type="date" class="form-control" id="fecha" [(ngModel)]="fecha" name="fecha" [min]="minFecha" required>
         </div>
         <div class="col-6">
           <label for="horario" class="form-label">Elegir horario</label>

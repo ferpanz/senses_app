@@ -12,6 +12,21 @@ export class FormComponent {
   fecha: string = '';
   horario: string = '';
   tipoMasaje: string = '';
+  minFecha: string = '';
+
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+    this.setMinFecha();  // Llamada para establecer la fecha mínima al cargar el componente
+  }
+
+  setMinFecha() {
+    const hoy = new Date();
+    const anio = hoy.getFullYear();
+    const mes = (hoy.getMonth() + 1).toString().padStart(2, '0');
+    const dia = hoy.getDate().toString().padStart(2, '0');
+    this.minFecha = `${anio}-${mes}-${dia}`;
+  }
 
   onSubmit() {
     const numeroWhatsapp = '5493571530727';
@@ -25,13 +40,7 @@ export class FormComponent {
     window.open(url, '_blank');
   }
 
-
-
-  constructor(private router: Router){
-
+  navegar(direccion: string) {
+    this.router.navigate([direccion]);
   }
-  navegar(direccion:string){
-    this.router.navigate([direccion])
-  }
-
 }
