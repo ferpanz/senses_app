@@ -17,7 +17,7 @@ export class FormComponent {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.setMinFecha();  // Llamada para establecer la fecha mínima al cargar el componente
+    this.setMinFecha();
   }
 
   setMinFecha() {
