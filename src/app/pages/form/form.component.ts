@@ -38,8 +38,8 @@ export class FormComponent {
 
    // const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}&app_absent=0`;
    // window.open(url, '_blank');
-    const url = `intent://send?phone=${numeroWhatsapp}&text=${encodeURIComponent(mensaje)}#Intent;package=com.whatsapp;scheme=https;end;`;
-  window.open(url, '_blank');
+   const url = `https://web.whatsapp.com/send?phone=${numeroWhatsapp}&text=${encodeURIComponent(mensaje)}`;
+   window.open(url, '_blank');
   }
 
   navegar(direccion: string) {
