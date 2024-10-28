@@ -36,10 +36,9 @@ export class FormComponent {
     Horario: ${this.horario}
     Tipo de masaje: ${this.tipoMasaje}`;
 
-   // const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}&app_absent=0`;
-   // window.open(url, '_blank');
-   const url = `https://web.whatsapp.com/send?phone=${numeroWhatsapp}&text=${encodeURIComponent(mensaje)}`;
-   window.open(url, '_blank');
+   const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}&app_absent=0`;
+   //window.open(url, '_blank');
+
   }
 
   navegar(direccion: string) {
