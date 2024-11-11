@@ -31,10 +31,10 @@ export class FormComponent {
   onSubmit() {
     const numeroWhatsapp = '5493571530727';
     const mensaje = `Reserva de masaje:
-    🧑‍💼 Nombre: ${this.nombre}
-    📅 Fecha: ${this.fecha}
-    🕒 Horario: ${this.horario}
-    💆‍♂️ Tipo de masaje: ${this.tipoMasaje}`;
+    Nombre: ${this.nombre}
+    Fecha: ${this.fecha}
+    Horario: ${this.horario}
+    Tipo de masaje: ${this.tipoMasaje}`;
 
    const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}&app_absent=0`;
    window.open(url, '_blank');
