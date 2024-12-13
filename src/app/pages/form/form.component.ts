@@ -29,7 +29,7 @@ export class FormComponent {
   }
 
   onSubmit() {
-    const numeroWhatsapp = '5493571530727';
+    const numeroWhatsapp = '5493571551770';
     const mensaje = `Reserva de masaje:
     Nombre: ${this.nombre}
     Fecha: ${this.fecha}
